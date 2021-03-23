@@ -1,0 +1,10 @@
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.exe.config
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.exe
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\Perceptron.pdb
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csprojAssemblyReference.cache
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.Presentacion.resources
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.Properties.Resources.resources
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.GenerateResource.cache
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.exe
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.pdb

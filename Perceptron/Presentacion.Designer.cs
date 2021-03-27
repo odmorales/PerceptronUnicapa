@@ -47,8 +47,6 @@ namespace Perceptron
             this.label5 = new System.Windows.Forms.Label();
             this.iteracionActual = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.errorLinealText = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.activacionCombo = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -60,16 +58,28 @@ namespace Perceptron
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.somaText = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.constanteText = new System.Windows.Forms.TextBox();
             this.umbralText = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tablaEntradasIdeales = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
+            this.entradasIText = new System.Windows.Forms.TextBox();
+            this.btnSimular = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaUmbral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPesos)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaEntradasIdeales)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -82,7 +92,7 @@ namespace Perceptron
             this.cargarDatosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(796, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(769, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,7 +186,7 @@ namespace Perceptron
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(474, 308);
+            this.label4.Location = new System.Drawing.Point(86, 344);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 25);
             this.label4.TabIndex = 8;
@@ -184,7 +194,7 @@ namespace Perceptron
             // 
             // errorPatronText
             // 
-            this.errorPatronText.Location = new System.Drawing.Point(568, 356);
+            this.errorPatronText.Location = new System.Drawing.Point(62, 396);
             this.errorPatronText.Name = "errorPatronText";
             this.errorPatronText.Size = new System.Drawing.Size(100, 20);
             this.errorPatronText.TabIndex = 14;
@@ -192,15 +202,15 @@ namespace Perceptron
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(584, 340);
+            this.label5.Location = new System.Drawing.Point(78, 380);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Error patron";
+            this.label5.Text = "Error iteracion";
             // 
             // iteracionActual
             // 
-            this.iteracionActual.Location = new System.Drawing.Point(462, 409);
+            this.iteracionActual.Location = new System.Drawing.Point(168, 396);
             this.iteracionActual.Name = "iteracionActual";
             this.iteracionActual.Size = new System.Drawing.Size(100, 20);
             this.iteracionActual.TabIndex = 12;
@@ -208,27 +218,11 @@ namespace Perceptron
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(476, 393);
+            this.label6.Location = new System.Drawing.Point(182, 380);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Iteracion actual";
-            // 
-            // errorLinealText
-            // 
-            this.errorLinealText.Location = new System.Drawing.Point(462, 356);
-            this.errorLinealText.Name = "errorLinealText";
-            this.errorLinealText.Size = new System.Drawing.Size(100, 20);
-            this.errorLinealText.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(484, 340);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Error Lineal";
             // 
             // label8
             // 
@@ -252,7 +246,7 @@ namespace Perceptron
             "LINEAL",
             "ESCALON",
             "SIGMOIDE"});
-            this.activacionCombo.Location = new System.Drawing.Point(474, 186);
+            this.activacionCombo.Location = new System.Drawing.Point(124, 222);
             this.activacionCombo.Name = "activacionCombo";
             this.activacionCombo.Size = new System.Drawing.Size(144, 21);
             this.activacionCombo.TabIndex = 26;
@@ -261,7 +255,7 @@ namespace Perceptron
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(472, 162);
+            this.label13.Location = new System.Drawing.Point(122, 198);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(146, 15);
             this.label13.TabIndex = 27;
@@ -269,7 +263,7 @@ namespace Perceptron
             // 
             // salidaText
             // 
-            this.salidaText.Location = new System.Drawing.Point(654, 162);
+            this.salidaText.Location = new System.Drawing.Point(304, 198);
             this.salidaText.Name = "salidaText";
             this.salidaText.Size = new System.Drawing.Size(56, 20);
             this.salidaText.TabIndex = 29;
@@ -277,15 +271,16 @@ namespace Perceptron
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(651, 146);
+            this.label14.Location = new System.Drawing.Point(301, 182);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 13);
             this.label14.TabIndex = 28;
             this.label14.Text = "Salida Red";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // botonEntrenar
             // 
-            this.botonEntrenar.Location = new System.Drawing.Point(587, 406);
+            this.botonEntrenar.Location = new System.Drawing.Point(324, 318);
             this.botonEntrenar.Name = "botonEntrenar";
             this.botonEntrenar.Size = new System.Drawing.Size(75, 23);
             this.botonEntrenar.TabIndex = 30;
@@ -339,19 +334,9 @@ namespace Perceptron
             this.label11.TabIndex = 35;
             this.label11.Text = "Umbral";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Perceptron.Properties.Resources.Screenshot_3;
-            this.pictureBox1.Location = new System.Drawing.Point(367, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 305);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 36;
-            this.pictureBox1.TabStop = false;
-            // 
             // somaText
             // 
-            this.somaText.Location = new System.Drawing.Point(386, 186);
+            this.somaText.Location = new System.Drawing.Point(36, 222);
             this.somaText.Name = "somaText";
             this.somaText.Size = new System.Drawing.Size(72, 20);
             this.somaText.TabIndex = 37;
@@ -360,7 +345,7 @@ namespace Perceptron
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(405, 162);
+            this.label12.Location = new System.Drawing.Point(55, 198);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 15);
             this.label12.TabIndex = 38;
@@ -369,45 +354,137 @@ namespace Perceptron
             // constanteText
             // 
             this.constanteText.Enabled = false;
-            this.constanteText.Location = new System.Drawing.Point(460, 27);
+            this.constanteText.Location = new System.Drawing.Point(110, 40);
             this.constanteText.Name = "constanteText";
             this.constanteText.Size = new System.Drawing.Size(31, 20);
             this.constanteText.TabIndex = 39;
             // 
             // umbralText
             // 
-            this.umbralText.Location = new System.Drawing.Point(513, 58);
+            this.umbralText.Location = new System.Drawing.Point(163, 94);
             this.umbralText.Name = "umbralText";
             this.umbralText.Size = new System.Drawing.Size(31, 20);
             this.umbralText.TabIndex = 40;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(331, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(438, 515);
+            this.tabControl1.TabIndex = 41;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.umbralText);
+            this.tabPage1.Controls.Add(this.activacionCombo);
+            this.tabPage1.Controls.Add(this.constanteText);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.salidaText);
+            this.tabPage1.Controls.Add(this.botonEntrenar);
+            this.tabPage1.Controls.Add(this.errorPatronText);
+            this.tabPage1.Controls.Add(this.somaText);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.iteracionActual);
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(430, 489);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Entrenar";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Perceptron.Properties.Resources.Screenshot_3;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 305);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnSimular);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.tablaEntradasIdeales);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.entradasIText);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(430, 489);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Simular";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(136, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Adicionar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tablaEntradasIdeales
+            // 
+            this.tablaEntradasIdeales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaEntradasIdeales.Location = new System.Drawing.Point(6, 79);
+            this.tablaEntradasIdeales.Name = "tablaEntradasIdeales";
+            this.tablaEntradasIdeales.Size = new System.Drawing.Size(205, 65);
+            this.tablaEntradasIdeales.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 35);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 15);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Ingresar entradas:";
+            // 
+            // entradasIText
+            // 
+            this.entradasIText.Location = new System.Drawing.Point(19, 53);
+            this.entradasIText.Name = "entradasIText";
+            this.entradasIText.Size = new System.Drawing.Size(100, 20);
+            this.entradasIText.TabIndex = 0;
+            // 
+            // btnSimular
+            // 
+            this.btnSimular.Location = new System.Drawing.Point(19, 155);
+            this.btnSimular.Name = "btnSimular";
+            this.btnSimular.Size = new System.Drawing.Size(75, 23);
+            this.btnSimular.TabIndex = 4;
+            this.btnSimular.Text = "Simular";
+            this.btnSimular.UseVisualStyleBackColor = true;
+            this.btnSimular.Click += new System.EventHandler(this.btnSimular_Click);
             // 
             // Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 450);
-            this.Controls.Add(this.umbralText);
-            this.Controls.Add(this.constanteText);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.somaText);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(769, 505);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tablaPesos);
             this.Controls.Add(this.tablaUmbral);
-            this.Controls.Add(this.botonEntrenar);
-            this.Controls.Add(this.salidaText);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.activacionCombo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.errorPatronText);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.iteracionActual);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.errorLinealText);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.iteracionesText);
             this.Controls.Add(this.label3);
@@ -416,7 +493,6 @@ namespace Perceptron
             this.Controls.Add(this.errorMaxText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Presentacion";
             this.Text = "Form1";
@@ -425,7 +501,13 @@ namespace Perceptron
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaUmbral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPesos)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaEntradasIdeales)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,8 +531,6 @@ namespace Perceptron
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox iteracionActual;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox errorLinealText;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox activacionCombo;
         private System.Windows.Forms.Label label13;
@@ -464,11 +544,19 @@ namespace Perceptron
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox somaText;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox constanteText;
         private System.Windows.Forms.TextBox umbralText;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox entradasIText;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView tablaEntradasIdeales;
+        private System.Windows.Forms.Button btnSimular;
     }
 }
 

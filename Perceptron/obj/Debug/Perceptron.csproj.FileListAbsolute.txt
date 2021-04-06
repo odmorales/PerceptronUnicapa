@@ -8,3 +8,13 @@ C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.c
 C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CoreCompileInputs.cache
 C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.exe
 C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.pdb
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.dll
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.pdb
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.xml
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Oscar Morales\source\repos\Perceptron\Perceptron\obj\Debug\Perceptron.csproj.CopyComplete
